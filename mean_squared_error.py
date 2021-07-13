@@ -39,7 +39,7 @@ for i in range(len(x)):
 
 #평균 제곱 오차에 들어갈 것 받는 함수
 def mse_in(y, predict_result):
-    return mse(np.array(y), np.array(predict_result))
+    return mse(np.array(y), np.array(predict_result)) #리스트를 연산에 사용하려면 np에 한 번 적용 해줘야함
 
 #평균 제곱 오차
 def mse(y, y_hat):
