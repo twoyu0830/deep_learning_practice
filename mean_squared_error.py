@@ -45,4 +45,4 @@ def mse_in(y, predict_result):
 def mse(y, y_hat):
     return ((y - y_hat) ** 2).mean()
 
-print("mse 최종값:", str(mse_in(y, predict_result)))
+print("mse 최종값:", str(mse_in(y, predict_result))) 
