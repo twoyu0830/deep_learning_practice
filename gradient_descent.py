@@ -54,12 +54,14 @@ for i in range(epochs):
     a -= lr * a_diff #a값 좌표 조절(이차곡선의 x축에서)
     b -= lr * b_diff
     
-    if i % 100 == 0:
+    if i % 100 == 0: #100번 반복될 때마다 상태 출력
         print("epochs = %.f, a = %.04f, b = %.04f, a_diff = %.04f, b_diff = %.04f" % (i, a, b, a_diff, b_diff))
         
+#최종 그래프(선형회귀)
 y_pred = a * x_data + b
 plt.scatter(x, y)
 plt.plot([min(x_data), max(x_data)], [min(y_pred), max(y_pred)])
 plt.show()
 
+#최종 방정식
 print("y = %.01fx + %.00f" % (a, b))
