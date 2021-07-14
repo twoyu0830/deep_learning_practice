@@ -55,11 +55,11 @@ for i in range(epochs):
     b -= lr * b_diff
     
     if i % 100 == 0:
-        print("epochs = %.f, 기울기 = %.04f, y절편 = %.04f, a값 = %f, b값 = %f" % (i, a, b, a_diff, b_diff))
+        print("epochs = %.f, a = %.04f, b = %.04f, a_diff = %.04f, b_diff = %.04f" % (i, a, b, a_diff, b_diff))
         
 y_pred = a * x_data + b
 plt.scatter(x, y)
 plt.plot([min(x_data), max(x_data)], [min(y_pred), max(y_pred)])
 plt.show()
 
-print("y = %.1fx + %.f" % (a, b))
+print("y = %.01fx + %.00f" % (a, b))
