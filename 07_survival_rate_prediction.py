@@ -35,7 +35,7 @@ X = Data_set[:, 0:17]
 Y = Data_set[:, 17]
 
 #딥러닝 구조 결정
-model = sequential()
+model = Sequential()
 model.add(Dense(30, input_dim = 17, activation = 'relu'))
 model.add(Dense(1, activation = 'sigmoid'))
 
