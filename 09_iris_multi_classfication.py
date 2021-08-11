@@ -48,4 +48,5 @@ Y_encoded = tf.keras.utils.to_categotical(Y)
 
 model = Sequential()
 model.add(Dense(16, imput_dim = 4, activation = 'relu'))
-model.add(Dense(3, activation = 'softmax')) #결과가 3개 중 하나이므로 출력층 노트가 3개
+#결과가 3개 중 하나이므로 출력층 노트가 3개, softmax함수: 합해서 1이되게 함, 원-한-인코딩이 쉽게 되게 함
+model.add(Dense(3, activation = 'softmax')) 
